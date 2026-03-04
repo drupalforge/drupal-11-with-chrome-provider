@@ -76,7 +76,7 @@ fi
 
 #== Apply the chrome provider recipe
 if [ -f google_chrome/composer.json ]; then
-  time composer drupal/ai:^1.3.0-rc2 drupal/ai_dashboard:^1 drupal/ai_image_alt_text:^1 drupal/ai_provider_browser:^1.0@alpha drupal/browser_ai_ckeditor:^1 league/commonmark:^2.4 drupal/admin_toolbar:^3.6 drupal/token:^1.17 drupal/redirect_after_login:^3.0 --no-update
+  time composer require drupal/ai:^1.3.0-rc2 drupal/ai_dashboard:^1 drupal/ai_image_alt_text:^1 drupal/ai_provider_browser:^1.0@alpha drupal/browser_ai_ckeditor:^1 league/commonmark:^2.4 drupal/admin_toolbar:^3.6 drupal/token:^1.17 drupal/redirect_after_login:^3.0 --no-update
   time composer update --no-dev --no-progress
   time drush recipe -y google_chrome
 fi
