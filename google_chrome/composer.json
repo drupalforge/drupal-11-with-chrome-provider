@@ -1,6 +1,6 @@
 {
   "name": "drupal/google_chrome",
-  "description": "Adds Google Chrome test bed",
+  "description": "Adds Google Chrome test bed - trigger stuff",
   "type": "drupal-recipe",
   "license": "GPL-2.0-or-later",
   "require": {
