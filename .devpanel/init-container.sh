@@ -37,5 +37,5 @@ echo 'Run cron.'
 drush cron
 echo
 echo 'Populate caches.'
-drush cache:warm &> /dev/null || :
+drush cache:warm
 $APP_ROOT/.devpanel/warm

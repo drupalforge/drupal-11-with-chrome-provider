@@ -1,0 +1,18 @@
+uuid: bc9c4436-c76c-46da-90f3-0d4644b0ac6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Blog Post'
+type: blog_post
+description: 'This is the blog post. It can be translated.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

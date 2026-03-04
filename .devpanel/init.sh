@@ -14,6 +14,14 @@ export COMPOSER_NO_AUDIT=1
 # For faster performance, don't install dev dependencies.
 export COMPOSER_NO_DEV=1
 
+# Install VSCode Extensions
+if [ -n "${DP_VSCODE_EXTENSIONS:-}" ]; then
+  IFS=','
+  for value in $DP_VSCODE_EXTENSIONS; do
+    time code-server --install-extension $value
+  done
+fi
+
 #== Remove root-owned files.
 echo
 echo Remove root-owned files.
@@ -61,14 +69,16 @@ echo
 if [ -z "$(drush status --field=db-status)" ]; then
   echo 'Install Drupal.'
   time drush -n si
-
-  echo
-  echo 'Tell Automatic Updates about patches.'
-  drush -n cset --input-format=yaml package_manager.settings additional_trusted_composer_plugins '["cweagans/composer-patches"]'
-  time drush ev '\Drupal::moduleHandler()->invoke("automatic_updates", "modules_installed", [[], FALSE])'
 else
   echo 'Update database.'
   time drush -n updb
+fi
+
+#== Apply the chrome provider recipe
+if [ -f google_chrome/composer.json ]; then
+  time composer drupal/ai:^1.3.0-rc2 drupal/ai_dashboard:^1 drupal/ai_image_alt_text:^1 drupal/ai_provider_browser:^1.0@alpha drupal/browser_ai_ckeditor:^1 league/commonmark:^2.4 drupal/admin_toolbar:^3.6 drupal/token:^1.17 drupal/redirect_after_login:^3.0 --no-update
+  time composer update --no-dev --no-progress
+  time drush recipe -y google_chrome
 fi
 
 #== Warm up caches.

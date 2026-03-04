@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_post.field_summary
+id: node.blog_post.field_summary.default
+label: 'Summary Default'
+rule: summarize_to_string_long
+input_mode: base
+weight: 100
+worker_type: field_widget_actions
+entity_type: node
+bundle: blog_post
+field_name: field_summary
+edit_mode: false
+base_field: field_blog_post
+prompt: ''
+token: ''
+plugin_config:
+  automator_enabled: 1
+  automator_rule: summarize_to_string_long
+  automator_mode: base
+  automator_base_field: field_blog_post
+  automator_edit_mode: 0
+  automator_label: 'Summary Default'
+  automator_weight: '100'
+  automator_worker_type: field_widget_actions
+  automator_ai_provider: default

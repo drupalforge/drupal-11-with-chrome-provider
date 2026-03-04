@@ -1,0 +1,23 @@
+prompt_logging: false
+prompt_logging_tags: ''
+default_providers:
+  chat:
+    provider_id: browser
+    model_id: chrome
+  chat_with_complex_json:
+    provider_id: browser
+    model_id: chrome
+  chat_with_image_vision:
+    provider_id: browser
+    model_id: chrome
+  chat_with_structured_response:
+    provider_id: browser
+    model_id: chrome
+  summarize:
+    provider_id: browser
+    model_id: chrome
+  translate_text:
+    provider_id: browser
+    model_id: chrome
+default_vdb_provider: ''
+request_timeout: 60

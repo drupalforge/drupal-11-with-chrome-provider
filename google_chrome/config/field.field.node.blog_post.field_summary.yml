@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.blog_post
+_core:
+  default_config_hash: MFC8tq0CwR8WYwp3JVz54aFqxaI8njWqGs3GfjDr6JA
+id: node.blog_post.field_summary
+field_name: field_summary
+entity_type: node
+bundle: blog_post
+label: Summary
+description: 'This summary can either be written manually or be written via the Google Chrome provider, by clicking the "Summarize with Google" button.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

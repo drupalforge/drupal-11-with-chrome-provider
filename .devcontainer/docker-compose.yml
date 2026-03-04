@@ -5,7 +5,7 @@ services:
   app:
     image: devpanel/php:8.3-base-rc
     environment:
-      DP_APP_ID: 'drupalforge'
+      DP_APP_ID: 'drupal-11'
       APP_ROOT: '/var/www/html'        
       WEB_ROOT: '/var/www/html/web'
       CODES_USER_DATA_DIR: '/var/www/html/.vscode'

@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_post
+    - filter.format.chrome_test
+    - node.type.blog_post
+  module:
+    - text
+_core:
+  default_config_hash: tcnq3KiXegkkYKAy5-p8w1zRIXfTFa7OjBK-VjCFPSU
+id: node.blog_post.field_blog_post
+field_name: field_blog_post
+entity_type: node
+bundle: blog_post
+label: 'Blog Post'
+description: 'This is the blog post. This can use the CKEditor assistants, but is also the source for the summary button and for translations.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - chrome_test
+field_type: text_long

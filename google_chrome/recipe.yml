@@ -1,0 +1,43 @@
+name: AI Assistant
+type: Drupal CMS
+description: "Adds integration with AI services, such as alt text generation and a chat bot to assist with site building. You can choose from several providers: amazee.ai, OpenAI or Anthropic."
+install:
+  - ai
+  - ai_image_alt_text
+  - ai_provider_browser
+  - ai_translate
+  - content_translation
+  - browser_ai_ckeditor
+  - admin_toolbar
+  - admin_toolbar_tools
+  - language
+  - ai_automators
+  - field_widget_actions
+  - token
+  - redirect_after_login
+config:
+  import:
+    ai: "*"
+    ai_image_alt_text: "*"
+    ai_provider_browser: "*"
+    ai_translate: "*"
+    admin_toolbar: "*"
+    admin_toolbar_tools: "*"
+    content_translation: "*"
+    language: "*"
+    ai_automators: "*"
+    field_widget_actions: "*"
+    token: "*"
+    redirect_after_login: "*"
+  actions:
+    # Add French as test language.
+    language.entity.fr:
+      ensure_exists:
+        id: fr
+        label: French
+        direction: ltr
+        weight: 1
+        locked: false
+    system.site:
+      simpleConfigUpdate:
+        name: 'Test Chrome Provider'

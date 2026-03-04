@@ -18,15 +18,6 @@ if ! command -v npm >/dev/null 2>&1; then
   sudo apt-get install -y jq nano npm
 fi
 
-# Install VSCode Extensions
-if [ -n "${DP_VSCODE_EXTENSIONS:-}" ]; then
-  sudo chown -R www:www $APP_ROOT/.vscode/extensions/
-  IFS=','
-  for value in $DP_VSCODE_EXTENSIONS; do
-    code-server --install-extension $value --user-data-dir=$APP_ROOT/.vscode
-  done
-fi
-
 # Enable AVIF support in GD extension if not already enabled.
 if [ -z "$(php --ri gd | grep AVIF)" ]; then
   sudo apt-get install -y libavif-dev

@@ -1,0 +1,15 @@
+timeout: 60
+polling_interval: 5
+routes: {  }
+download_routes:
+  - '/admin/*'
+foreground_only: true
+enabled_chat: true
+enabled_translate: true
+enabled_summarize: true
+summarize_routes:
+  - '/node/*/edit'
+download_message_chat: 'The browser AI provider requires downloading a language model to function. This is a one-time download.'
+download_message_translate: 'A language pack is needed for translation. This is a one-time download.'
+download_message_summarize: 'The browser AI provider requires downloading the summarization model. This is a one-time download.'
+download_message_bulk: 'Download language packs for all site languages to enable browser-based translation.'

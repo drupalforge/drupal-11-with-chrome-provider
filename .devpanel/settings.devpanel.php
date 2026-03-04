@@ -10,4 +10,4 @@ $databases['default']['default']['isolation_level'] = 'READ COMMITTED';
 $settings['hash_salt'] = file_get_contents(__DIR__ . '/salt.txt');
 $settings['config_sync_directory'] = '../config/sync';
 $settings['file_private_path'] = '../private';
-$settings['trusted_host_patterns'][] = getenv('DP_HOSTNAME') ?: '.*';
+$settings['trusted_host_patterns'] = [getenv('DP_HOSTNAME') ?: '.*'];

@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9b31413f-c3d5-4116-aa47-6e561edb609e
+  bundle: blog_post
+  default_langcode: en
+  depends:
+    6a178460-3fca-45fb-b403-daede2c2aac4: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Getting Started testing the Chrome Provider'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  ai_automator_status:
+    -
+      value: pending
+  field_blog_post:
+    -
+      value: '<h2>Getting started with testing the Chrome Browser</h2><p>The first step is to login using the username admin and the password admin.</p><p>After that you can click on "Content" in the menu and you will see all available content. You may now create a new Blogpost</p><p>In the image field you can upload an image and test the alt text image function.</p><p>In the blog post you can play around with the browser buttons on the right and write some text.</p><p>In the Summary field you have the "Summarize with Google Chrome Provider" button you can use to Summarize the content.</p><p>After you save, there is a "Translate" tab, inside this you can click Translate with Chrome, to translate the content to French.</p><p>If you want to add more languages, use Configuration -&gt; Region and language -&gt; Languages</p>'
+      format: chrome_test
+  field_preview_image:
+    -
+      alt: 'Visualizing the Chrome Browser'
+      title: ''
+      width: 1920
+      height: 1072
+      entity: 6a178460-3fca-45fb-b403-daede2c2aac4
+  field_summary:
+    -
+      value: 'This is explanations on how to use this.'

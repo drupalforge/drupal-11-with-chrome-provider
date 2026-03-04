@@ -19,14 +19,16 @@ composer_version: "2"
 disable_settings_management: true
 web_environment:
     # Set up DevPanel variables.
+    - APACHE_RUN_USER=$DDEV_USER
+    - APACHE_RUN_GROUP=dialout
     - APP_ROOT=$DDEV_COMPOSER_ROOT
-    - DRUSH_OPTIONS_URI=$DDEV_PRIMARY_URL
     - WEB_ROOT=$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT
     - DB_HOST=db
     - DB_PORT=3306
     - DB_USER=db
     - DB_PASSWORD=db
     - DB_NAME=db
-    - DP_APP_ID=starter_template
+    - DP_APP_ID=drupal-11-with-chrome-provider
     - DB_DRIVER=mysql
+    - DEBUG_SCRIPT=1
 corepack_enable: false
