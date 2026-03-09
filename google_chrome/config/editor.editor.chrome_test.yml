@@ -5,7 +5,8 @@ dependencies:
     - filter.format.chrome_test
   module:
     - ckeditor5
-    - browser_ai_ckeditor
+_core:
+  default_config_hash: 7Ng02k47g-8ORWZ66xInFObAvRqokuMMvAxt3EANL38
 format: chrome_test
 editor: ckeditor5
 settings:
@@ -22,10 +23,49 @@ settings:
       - link
       - drupalInsertImage
       - '|'
-      - aiProofread
-      - aiWriteForMe
-      - aiSummarize
+      - aickeditor
+      - ai_balloon_menu
   plugins:
+    ai_ckeditor_ai:
+      dialog:
+        autoresize: 'min-width: 600px'
+        height: '750'
+        width: '900'
+        dialog_class: ai-ckeditor-modal
+      plugins:
+        ai_automators_ckeditor:
+          enabled: false
+          workflows: {  }
+        ai_ckeditor_completion:
+          enabled: false
+          provider: browser__chrome
+        ai_ckeditor_help:
+          enabled: false
+        ai_ckeditor_modify_prompt:
+          enabled: true
+          provider: browser__chrome
+        ai_ckeditor_reformat_html:
+          enabled: false
+          provider: browser__chrome
+        ai_ckeditor_spellfix:
+          enabled: false
+          provider: browser__chrome
+        ai_ckeditor_summarize:
+          enabled: true
+          provider: browser__chrome
+        ai_ckeditor_tone:
+          enabled: true
+          provider: browser__chrome
+          autocreate: false
+          tone_vocabulary: tone
+          use_description: true
+        ai_ckeditor_translate:
+          enabled: true
+          provider: browser__chrome
+          language_source: lang
+          autocreate: false
+          translate_vocabulary: tags
+          use_description: false
     ckeditor5_heading:
       enabled_headings:
         - heading2
@@ -39,6 +79,7 @@ settings:
       properties:
         reversed: true
         startIndex: true
+        styles: false
       multiBlock: true
 image_upload:
   status: false

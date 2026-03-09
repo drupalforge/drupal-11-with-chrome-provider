@@ -7,7 +7,7 @@ install:
   - ai_provider_browser
   - ai_translate
   - content_translation
-  - browser_ai_ckeditor
+  - ai_ckeditor
   - admin_toolbar
   - admin_toolbar_tools
   - language
@@ -21,6 +21,7 @@ config:
     ai_image_alt_text: "*"
     ai_provider_browser: "*"
     ai_translate: "*"
+    ai_ckeditor: "*"
     admin_toolbar: "*"
     admin_toolbar_tools: "*"
     content_translation: "*"

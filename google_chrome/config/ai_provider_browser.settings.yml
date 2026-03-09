@@ -3,6 +3,7 @@ polling_interval: 5
 routes: {  }
 download_routes:
   - '/admin/*'
+  - '/node/*/edit'
 foreground_only: true
 enabled_chat: true
 enabled_translate: true

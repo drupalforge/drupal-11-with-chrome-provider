@@ -2,6 +2,8 @@ uuid: f3abcbc1-e738-48ce-a7cf-9fa96ba61a15
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: IF_d2hU1pjgpKNdRpHZJ0fAZHHIJp2x4w5GKM3D6uLo
 name: 'Chrome Test'
 format: chrome_test
 weight: 0

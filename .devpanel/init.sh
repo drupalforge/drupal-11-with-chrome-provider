@@ -83,6 +83,14 @@ if [ -f google_chrome/composer.json ]; then
   time drush recipe -y ../google_chrome
 fi
 
+#== Build the ckeditor.
+if [ -f web/modules/contrib/ai/modules/ai_ckeditor/package.json ]; then
+  echo
+  echo 'Build the ckeditor.'
+  time npm --prefix web/modules/contrib/ai/modules/ai_ckeditor install --no-audit --no-fund --silent
+  time npm --prefix web/modules/contrib/ai/modules/ai_ckeditor run build --silent
+fi
+
 #== Warm up caches.
 echo
 echo 'Run cron.'
