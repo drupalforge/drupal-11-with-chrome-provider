@@ -25,4 +25,24 @@ function google_meta_header_page_attachments(array &$attachments) {
     ],
     'google_meta_header_origin_trial_2',
   ];
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' => 'origin-trial',
+        'content' => 'AgxTMn1BZPWyfzpXOr7H49e4TbKe4hruKJ0TW9MMVBzwth9 / ZppMwQY9sAQnW4GIXRpgb6BAPRQZNyjBAETJ4goAAABpeyJvcmlnaW4iOiJodHRwczovL2RydXBhbGZvcmdlLmFwcDo0NDMiLCJmZWF0dXJlIjoiQUlSZXdyaXRlckFQSSIsImV4cGlyeSI6MTc3NjcyOTYwMCwiaXNTdWJkb21haW4iOnRydWV9',
+      ],
+    ],
+    'google_meta_header_origin_trial_3',
+  ];
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' => 'origin-trial',
+        'content' => 'An9AiNnlyuj48AurVMnC/AvZ9EJbw+A35S7YxfLSLDMUk2knqPKZuNSA4azG1+I4BNcEwI7T/s8rO6OKQuJlvQAAAABneyJvcmlnaW4iOiJodHRwczovL2RydXBhbGZvcmdlLmFwcDo0NDMiLCJmZWF0dXJlIjoiQUlXcml0ZXJBUEkiLCJleHBpcnkiOjE3NzY3Mjk2MDAsImlzU3ViZG9tYWluIjp0cnVlfQ==',
+      ],
+    ],
+    'google_meta_header_origin_trial_4',
+  ];
 }
