@@ -1,0 +1,5 @@
+name: Google Meta Header
+type: module
+description: 'Adds the trial meta header to the website.'
+package: Other
+core_version_requirement: ^10.2 || ^11

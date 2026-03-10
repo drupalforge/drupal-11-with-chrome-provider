@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function google_meta_header_page_attachments(array &$attachments) {
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' => 'ai-prompt-api-multimodal-input',
+        'content' => 'Aomym0nj3uR10aC0Vdv25S3Jfg3LT4OCWdImpTaXbYFLxX8f+vOJ8E4awy/AKMX55EYoqXfMpsmiGkoq3pb0HAsAAAB2eyJvcmlnaW4iOiJodHRwczovL2RydXBhbGZvcmdlLmFwcDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3ODE1NjgwMDAsImlzU3ViZG9tYWluIjp0cnVlfQ==',
+      ],
+    ],
+    'google_meta_headere_ai_prompt_api_multimodal_input',
+  ];
+}

@@ -91,6 +91,14 @@ if [ -f web/modules/contrib/ai/modules/ai_ckeditor/package.json ]; then
   time npm --prefix web/modules/contrib/ai/modules/ai_ckeditor run build --silent
 fi
 
+#== Setup the meta header.
+if [ -f google_meta_header/google_meta_header.info.yml ]; then
+  echo
+  echo 'Setup the meta header.'
+  cp -r google_meta_header web/modules/contrib/
+  time drush en -y google_meta_header
+fi
+
 #== Warm up caches.
 echo
 echo 'Run cron.'
