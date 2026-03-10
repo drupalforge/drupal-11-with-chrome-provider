@@ -1,3 +1,4 @@
+uuid: c93301d9-f1e5-4326-9fc1-dc08edc7031e
 langcode: en
 status: true
 dependencies:
@@ -6,7 +7,7 @@ dependencies:
   module:
     - ckeditor5
 _core:
-  default_config_hash: 7Ng02k47g-8ORWZ66xInFObAvRqokuMMvAxt3EANL38
+  default_config_hash: _jd5zXQJISpcURhiI-WgTLmoo5ls7LVVrwvp4IoLDa4
 format: chrome_test
 editor: ckeditor5
 settings:
@@ -25,6 +26,10 @@ settings:
       - '|'
       - aickeditor
       - ai_balloon_menu
+      - aiRewrite
+      - aiSummarize
+      - aiProofread
+      - aiWriteForMe
   plugins:
     ai_ckeditor_ai:
       dialog:

@@ -15,6 +15,7 @@ install:
   - field_widget_actions
   - token
   - redirect_after_login
+  - browser_ai_ckeditor
 config:
   import:
     ai: "*"
@@ -30,6 +31,7 @@ config:
     field_widget_actions: "*"
     token: "*"
     redirect_after_login: "*"
+    browser_ai_ckeditor: "*"
   actions:
     # Add French as test language.
     language.entity.fr:
