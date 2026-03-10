@@ -30,7 +30,7 @@ function google_meta_header_page_attachments(array &$attachments) {
       '#tag' => 'meta',
       '#attributes' => [
         'http-equiv' => 'origin-trial',
-        'content' => 'AgxTMn1BZPWyfzpXOr7H49e4TbKe4hruKJ0TW9MMVBzwth9 / ZppMwQY9sAQnW4GIXRpgb6BAPRQZNyjBAETJ4goAAABpeyJvcmlnaW4iOiJodHRwczovL2RydXBhbGZvcmdlLmFwcDo0NDMiLCJmZWF0dXJlIjoiQUlSZXdyaXRlckFQSSIsImV4cGlyeSI6MTc3NjcyOTYwMCwiaXNTdWJkb21haW4iOnRydWV9',
+        'content' => 'AgxTMn1BZPWyfzpXOr7H49e4TbKe4hruKJ0TW9MMVBzwth9/ZppMwQY9sAQnW4GIXRpgb6BAPRQZNyjBAETJ4goAAABpeyJvcmlnaW4iOiJodHRwczovL2RydXBhbGZvcmdlLmFwcDo0NDMiLCJmZWF0dXJlIjoiQUlSZXdyaXRlckFQSSIsImV4cGlyeSI6MTc3NjcyOTYwMCwiaXNTdWJkb21haW4iOnRydWV9',
       ],
     ],
     'google_meta_header_origin_trial_3',
