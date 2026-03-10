@@ -8,10 +8,21 @@ function google_meta_header_page_attachments(array &$attachments) {
     [
       '#tag' => 'meta',
       '#attributes' => [
-        'name' => 'ai-prompt-api-multimodal-input',
+        'name' => 'origin-trial',
         'content' => 'Aomym0nj3uR10aC0Vdv25S3Jfg3LT4OCWdImpTaXbYFLxX8f+vOJ8E4awy/AKMX55EYoqXfMpsmiGkoq3pb0HAsAAAB2eyJvcmlnaW4iOiJodHRwczovL2RydXBhbGZvcmdlLmFwcDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3ODE1NjgwMDAsImlzU3ViZG9tYWluIjp0cnVlfQ==',
       ],
     ],
-    'google_meta_headere_ai_prompt_api_multimodal_input',
+    'google_meta_header_origin_trial_1',
+  ];
+
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' => 'origin-trial',
+        'content' => 'AhFOM1N7SRKckLSvU/QyzPLqVwY+nw+3V9SXybpeB/ytCwIETXNQcx8N8CDX0GRX5VlVPNJYirIQpZDOxuK10wIAAABseyJvcmlnaW4iOiJodHRwczovL2RydXBhbGZvcmdlLmFwcDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9vZnJlYWRlckFQSSIsImV4cGlyeSI6MTc3OTE0ODgwMCwiaXNTdWJkb21haW4iOnRydWV9',
+      ],
+    ],
+    'google_meta_header_origin_trial_2',
   ];
 }
