@@ -16,6 +16,7 @@ install:
   - token
   - redirect_after_login
   - browser_ai_ckeditor
+  - shortcut
 config:
   import:
     ai: "*"

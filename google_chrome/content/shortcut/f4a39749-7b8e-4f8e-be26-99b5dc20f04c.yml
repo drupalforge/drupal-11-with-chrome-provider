@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: shortcut
+  uuid: f4a39749-7b8e-4f8e-be26-99b5dc20f04c
+  bundle: default
+  default_langcode: en
+default:
+  title:
+    -
+      value: 'Getting Started'
+  weight:
+    -
+      value: -18
+  link:
+    -
+      uri: 'internal:/node/1'
+      title: ''
+      options: {  }
