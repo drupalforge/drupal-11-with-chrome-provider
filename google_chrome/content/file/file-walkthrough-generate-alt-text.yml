@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e60e5482-7921-456e-9dd0-32877dd53f8d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: walkthrough-generate-alt-text.png
+  uri:
+    -
+      value: 'public://walkthrough-generate-alt-text.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 69053
+  status:
+    -
+      value: true

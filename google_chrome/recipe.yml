@@ -44,4 +44,3 @@ config:
     system.site:
       simpleConfigUpdate:
         name: 'Test Chrome Provider'
-        page.front: /getting-started

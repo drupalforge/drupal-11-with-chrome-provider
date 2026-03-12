@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 360a2509-09e2-4cd5-b184-57c05e622a67
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: walkthrough-translate.png
+  uri:
+    -
+      value: 'public://walkthrough-translate.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 116076
+  status:
+    -
+      value: true

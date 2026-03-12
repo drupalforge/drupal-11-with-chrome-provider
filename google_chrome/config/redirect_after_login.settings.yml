@@ -1,6 +1,6 @@
 login_redirection:
   anonymous: null
-  authenticated: /admin/content?check_logged_in=1
-  content_editor: /admin/content?check_logged_in=1
-  administrator: /admin/content?check_logged_in=1
+  authenticated: /admin/content
+  content_editor: /admin/content
+  administrator: /admin/content
 exclude_urls: ''

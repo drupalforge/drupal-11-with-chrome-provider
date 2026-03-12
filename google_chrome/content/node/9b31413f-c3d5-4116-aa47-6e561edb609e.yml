@@ -6,6 +6,15 @@ _meta:
   default_langcode: en
   depends:
     6a178460-3fca-45fb-b403-daede2c2aac4: file
+    768c250d-8db1-400a-866b-f52a9afa12e1: file
+    802c1cdd-b3ef-42fa-b923-f113039ac155: file
+    b963db97-384b-4fba-b9ed-08105f41c6d4: file
+    e60e5482-7921-456e-9dd0-32877dd53f8d: file
+    f829aeb1-6d10-4d76-a235-0acf28055a1f: file
+    0766b2ca-08fb-4dd9-8279-323ea0371809: file
+    6a08712c-fdbb-4767-8fe5-5d64894d2270: file
+    266e9d88-f4ad-4531-89f4-aec2a492a047: file
+    360a2509-09e2-4cd5-b184-57c05e622a67: file
 default:
   revision_uid:
     -
@@ -18,7 +27,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'Chrome Prompt API Demo Tutorial'
+      value: 'Getting Started testing the Chrome Provider'
   promote:
     -
       value: true
@@ -31,13 +40,44 @@ default:
   path:
     -
       langcode: en
-      alias: /getting-started
+      alias: null
   ai_automator_status:
     -
       value: pending
   field_blog_post:
     -
-      value: '<h2>Welcome to the Chrome Prompt API demo</h2><p>This tutorial is the first page after login. Follow the steps below to test each feature quickly.</p><h3>One-time setup</h3><p>If Chrome asks you to download Gemini Nano, allow the download before testing features.</p><h3>Demo credentials</h3><p>For demo environments use username <strong>admin</strong> and password <strong>admin</strong>.</p><h3>Feature walkthrough</h3><ol><li>Go to <strong>Content</strong> and open or create a Blog Post.</li><li>Upload an image and use the image action to generate alt text.</li><li>In the main editor, highlight text and use AI Assistant actions such as summarize, translate, and change tone.</li><li>Use the local browser AI editor buttons to summarize or proofread selected text.</li><li>Use <strong>Summarize with Google Chrome Provider</strong> for the Summary field.</li><li>Save content, open the <strong>Translate</strong> tab, and translate between English and French.</li></ol><p>Need another language? Go to Configuration &gt; Region and Language &gt; Languages.</p><p><a href="/admin/content">Open Content</a></p>'
+      value: |
+        <h2>Getting started with testing the Chrome Browser Prompt API</h2>
+        <p>Explore a demo that combines Drupal CMS features with a small AI model that runs locally in your browser. With the Prompt API and Gemini Nano, you can test Drupal AI features without costly API keys.</p>
+        <p>This is sovereign AI: private, local-first, and built on open source foundations. Because this runs on your machine, 16GB RAM is recommended and quality may differ from frontier hosted models.</p>
+        <h3>One-time setup</h3>
+        <h4>Download Gemini Nano</h4>
+        <p>If this is your first time, allow the model download when Chrome prompts you.</p>
+        <p><img src="/sites/default/files/setup-download-model.png" alt="Chrome Prompt API model download pop-up" style="max-width: 100%; height: auto;" /></p>
+        <h4>Running on your own host</h4>
+        <p>This demo host is already registered for the Chrome origin trial. On your own host, register your domain for the required trial or enable the required flags in <code>chrome://flags</code>.</p>
+        <p><img src="/sites/default/files/setup-enable-flags.png" alt="Chrome flags needed for Prompt API features" style="max-width: 100%; height: auto;" /></p>
+        <h3>Demo features and how to test</h3>
+        <h4>1) Log in and open content</h4>
+        <p>Use username <strong>admin</strong> and password <strong>admin</strong>. Then click <strong>Content</strong>, open or create a Blog Post, and add sample text.</p>
+        <p><img src="/sites/default/files/walkthrough-content.png" alt="Drupal content listing screen" style="max-width: 100%; height: auto;" /></p>
+        <h4>2) Generate alt text</h4>
+        <p>Upload an image and use the image field action to generate alt text using Browser AI.</p>
+        <p><img src="/sites/default/files/walkthrough-generate-alt-text.png" alt="Generate alt text button on image field" style="max-width: 100%; height: auto;" /></p>
+        <h4>3) Use CKEditor assistants</h4>
+        <p>Highlight text and test assistant actions: Summarise, Translate, and Tone change.</p>
+        <p><img src="/sites/default/files/walkthrough-ai-assistant-list.png" alt="AI assistant action list in CKEditor" style="max-width: 100%; height: auto;" /></p>
+        <p><img src="/sites/default/files/walkthrough-ai-assistant-language.png" alt="Language chooser for CKEditor translate assistant" style="max-width: 100%; height: auto;" /></p>
+        <h4>4) Use local-only browser AI actions</h4>
+        <p>Highlight text and use local AI actions, such as summarise or proofread, directly in the editor.</p>
+        <p><img src="/sites/default/files/walkthrough-local-ai-summarise.png" alt="Local AI summarise action in CKEditor" style="max-width: 100%; height: auto;" /></p>
+        <h4>5) Summarise into the Summary field</h4>
+        <p>Use <strong>Summarize with Google Chrome Provider</strong> to populate the summary field.</p>
+        <p><img src="/sites/default/files/walkthrough-summary.png" alt="Summary generation action in blog post form" style="max-width: 100%; height: auto;" /></p>
+        <h4>6) Translate content</h4>
+        <p>Save the node, open the <strong>Translate</strong> tab, and translate between English and French.</p>
+        <p><img src="/sites/default/files/walkthrough-translate.png" alt="Translate tab and translation workflow" style="max-width: 100%; height: auto;" /></p>
+        <p>If you want to add more languages, use Configuration &gt; Region and Language &gt; Languages.</p>
       format: chrome_test
   field_preview_image:
     -
@@ -48,4 +88,4 @@ default:
       entity: 6a178460-3fca-45fb-b403-daede2c2aac4
   field_summary:
     -
-      value: 'A quick walkthrough for testing the Chrome Prompt API demo features after login.'
+      value: 'A short guide for testing the Chrome Prompt API demo: log in, edit a blog post, generate alt text, use CKEditor assistants, summarize content, and run translation.'
