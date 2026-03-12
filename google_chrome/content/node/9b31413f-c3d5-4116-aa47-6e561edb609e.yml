@@ -18,7 +18,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'Getting Started testing the Chrome Provider'
+      value: 'Chrome Prompt API Demo Tutorial'
   promote:
     -
       value: true
@@ -31,13 +31,13 @@ default:
   path:
     -
       langcode: en
-      alias: null
+      alias: /getting-started
   ai_automator_status:
     -
       value: pending
   field_blog_post:
     -
-      value: '<h2>Getting started with testing the Chrome Browser</h2><p>The first step is to login using the username admin and the password admin.</p><p>After that you can click on "Content" in the menu and you will see all available content. You may now create a new Blogpost</p><p>In the image field you can upload an image and test the alt text image function.</p><p>In the blog post you can play around with the browser buttons on the right and write some text.</p><p>In the Summary field you have the "Summarize with Google Chrome Provider" button you can use to Summarize the content.</p><p>After you save, there is a "Translate" tab, inside this you can click Translate with Chrome, to translate the content to French.</p><p>If you want to add more languages, use Configuration -&gt; Region and language -&gt; Languages</p>'
+      value: '<h2>Welcome to the Chrome Prompt API demo</h2><p>This tutorial is the first page after login. Follow the steps below to test each feature quickly.</p><h3>One-time setup</h3><p>If Chrome asks you to download Gemini Nano, allow the download before testing features.</p><h3>Demo credentials</h3><p>For demo environments use username <strong>admin</strong> and password <strong>admin</strong>.</p><h3>Feature walkthrough</h3><ol><li>Go to <strong>Content</strong> and open or create a Blog Post.</li><li>Upload an image and use the image action to generate alt text.</li><li>In the main editor, highlight text and use AI Assistant actions such as summarize, translate, and change tone.</li><li>Use the local browser AI editor buttons to summarize or proofread selected text.</li><li>Use <strong>Summarize with Google Chrome Provider</strong> for the Summary field.</li><li>Save content, open the <strong>Translate</strong> tab, and translate between English and French.</li></ol><p>Need another language? Go to Configuration &gt; Region and Language &gt; Languages.</p><p><a href="/admin/content">Open Content</a></p>'
       format: chrome_test
   field_preview_image:
     -
@@ -48,4 +48,4 @@ default:
       entity: 6a178460-3fca-45fb-b403-daede2c2aac4
   field_summary:
     -
-      value: 'This is explanations on how to use this.'
+      value: 'A quick walkthrough for testing the Chrome Prompt API demo features after login.'

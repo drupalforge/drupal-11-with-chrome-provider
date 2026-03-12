@@ -1,6 +1,6 @@
 login_redirection:
   anonymous: null
-  authenticated: /admin/content
-  content_editor: /admin/content
-  administrator: /admin/content
+  authenticated: /getting-started
+  content_editor: /getting-started
+  administrator: /getting-started
 exclude_urls: ''
