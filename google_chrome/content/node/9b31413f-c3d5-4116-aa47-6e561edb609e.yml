@@ -47,7 +47,14 @@ default:
       value: |
         <p>Explore a demo which combines the features of Drupal CMS with a small AI model that runs locally directly in your browser. With the Prompt API and Gemini Nano, you can try out the Drupal CMS AI features without costly and complicated API keys.</p>
         <p>This is Sovereign AI: fully private and built using open source models you can control. Please note: as it runs on your local machine, you will ideally need 16GB of RAM and may experience a difference in quality compared to paid-for frontier models.</p>
-        <p><strong>Start here:</strong> if you are anonymous, click <strong>Log in</strong> in the top-right menu using username <strong>admin</strong> and password <strong>admin</strong>.</p>
+        <p><strong>Start here:</strong> if you are anonymous, click <a href="/user/login"><strong>Log in</strong></a> in the top-right menu. On mobile, open <strong>Menu</strong> first, then tap <strong>Log in</strong>. Use username <strong>admin</strong> and password <strong>admin</strong>.</p>
+        <h3>Quick start (2 minutes)</h3>
+        <ol>
+          <li>Log in.</li>
+          <li>Go to <strong>Content</strong>, then click <strong>Edit</strong> on this page.</li>
+          <li>Complete the one-time Gemini Nano download popup when prompted.</li>
+          <li>Test Alt Text Generation, CKEditor Assistants, Summarisation, and Translation.</li>
+        </ol>
         <h3>Demo features include:</h3>
         <ul>
           <li><strong>Summarisation:</strong> A single button to summarise content directly into the Summary fields on Blog Posts.</li>
@@ -64,30 +71,30 @@ default:
         <h3>Demo features - how to</h3>
         <h4>1) Log in and open the demo page for editing</h4>
         <p>After logging in, click <strong>Content</strong>, then click <strong>Edit</strong> on the page named <strong>Getting started with testing the Chrome Browser Prompt API</strong>.</p>
-        <p><img src="/sites/default/files/walkthrough-content.png" alt="Drupal content listing screen with edit links" style="max-width: 840px; width: 100%; height: auto;" /></p>
+        <p><img src="/sites/default/files/walkthrough-content.png" alt="Drupal content listing screen with edit links" style="max-width: 760px; width: 100%; height: auto;" /></p>
         <h4>2) One-time setup: Download the AI model (Gemini Nano)</h4>
         <p>If this is your first time you will need to download the model by clicking the popup:</p>
-        <p><img src="/sites/default/files/setup-download-model.png" alt="Chrome Prompt API model download pop-up" style="max-width: 840px; width: 100%; height: auto;" /></p>
+        <p><img src="/sites/default/files/setup-download-model.png" alt="Chrome Prompt API model download pop-up" style="max-width: 760px; width: 100%; height: auto;" /></p>
         <h4>3) Alt Text Generation</h4>
         <p>Upload an image and generate appropriate alt text using Browser AI.</p>
         <p>Test this using the image field.</p>
-        <p><img src="/sites/default/files/walkthrough-generate-alt-text.png" alt="Generate alt text button on image field" style="max-width: 840px; width: 100%; height: auto;" /></p>
+        <p><img src="/sites/default/files/walkthrough-generate-alt-text.png" alt="Generate alt text button on image field" style="max-width: 760px; width: 100%; height: auto;" /></p>
         <h4>4) CKEditor Assistants</h4>
         <p>All the CKEditor Assistants in Drupal with your local AI.</p>
         <p>Try it out by highlighting some text then click Summarise, Translate, or Change tone. Select your preferred CKEditor Assistant. Translation requires language selection and Tone offers a choice of pre-set tones.</p>
-        <p><img src="/sites/default/files/walkthrough-ai-assistant-list.png" alt="AI assistant action list in CKEditor" style="max-width: 840px; width: 100%; height: auto;" /></p>
+        <p><img src="/sites/default/files/walkthrough-ai-assistant-list.png" alt="AI assistant action list in CKEditor" style="max-width: 760px; width: 100%; height: auto;" /></p>
         <h4>5) Fully Private Local AI</h4>
         <p>CKEditor buttons to summarise or proofread the text.</p>
         <p>Highlight some text and click one of the Local AI buttons such as Summarise. It will replace the text with the summarised version.</p>
-        <p><img src="/sites/default/files/walkthrough-local-ai-summarise.png" alt="Local AI summarise action in CKEditor" style="max-width: 840px; width: 100%; height: auto;" /></p>
+        <p><img src="/sites/default/files/walkthrough-local-ai-summarise.png" alt="Local AI summarise action in CKEditor" style="max-width: 760px; width: 100%; height: auto;" /></p>
         <h4>6) Summarisation</h4>
         <p>Button to summarise content directly into the Summary fields on Blog Posts.</p>
         <p>You can also use the Summarize with Google Chrome Provider button.</p>
-        <p><img src="/sites/default/files/walkthrough-summary.png" alt="Summary generation action in blog post form" style="max-width: 840px; width: 100%; height: auto;" /></p>
+        <p><img src="/sites/default/files/walkthrough-summary.png" alt="Summary generation action in blog post form" style="max-width: 760px; width: 100%; height: auto;" /></p>
         <h4>7) Translation</h4>
         <p>Simple feature to translate whole pages between English and French.</p>
         <p>Try this after saving, using the Translate tab.</p>
-        <p><img src="/sites/default/files/walkthrough-translate.png" alt="Translate tab and translation workflow" style="max-width: 840px; width: 100%; height: auto;" /></p>
+        <p><img src="/sites/default/files/walkthrough-translate.png" alt="Translate tab and translation workflow" style="max-width: 760px; width: 100%; height: auto;" /></p>
         <p>If you want to add more languages, use Configuration &gt; Region and Language &gt; Languages.</p>
       format: chrome_test
   field_preview_image:
