@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6a08712c-fdbb-4767-8fe5-5d64894d2270
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: walkthrough-local-ai-summarise.png
+  uri:
+    -
+      value: 'public://walkthrough-local-ai-summarise.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 48934
+  status:
+    -
+      value: true

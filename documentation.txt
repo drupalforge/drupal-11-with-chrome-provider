@@ -1,0 +1,21 @@
+Chrome Browser Prompt API Self-Hosting Notes
+
+This file is for teams hosting this demo on their own domain.
+It is not intended to appear on the Drupal tutorial page.
+
+Experimental features
+- Some Chrome Prompt API demos require experimental browser features.
+- This demo environment may work without extra setup when origin trial
+  tokens are correctly configured for the served domain.
+
+Origin trial reference
+- https://developer.chrome.com/origintrials/#/view_trial/2533837740349325313
+
+If your host is not origin-trial enabled
+1. Open `chrome://flags` in Chrome.
+2. Enable the relevant Gemini Nano and related AI flags needed for your demo.
+3. Restart Chrome and retest the Drupal AI features.
+
+Notes
+- Keep this guidance in filesystem docs rather than the Drupal tutorial page.
+- The Drupal tutorial page should focus on end-user testing flow.

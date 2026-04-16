@@ -5,3 +5,5 @@ You can run it locally using DDEV. To do that, you need to have DDEV installed o
 Just do `ddev start` in the project directory, and it will set up the environment for you. Once it's up and running, you can access the Drupal site at `http://drupal-11-with-chrome-provider.ddev.site`.
 
 The demo can be tested here: https://www.drupalforge.org/template/drupal-chrome-prompt-api
+
+For self-hosting notes about Chrome experimental/origin-trial setup, see `documentation.txt`.

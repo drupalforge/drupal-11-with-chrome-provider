@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b963db97-384b-4fba-b9ed-08105f41c6d4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: walkthrough-content.png
+  uri:
+    -
+      value: 'public://walkthrough-content.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 106727
+  status:
+    -
+      value: true

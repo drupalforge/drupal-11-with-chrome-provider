@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f829aeb1-6d10-4d76-a235-0acf28055a1f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: walkthrough-ai-assistant-list.png
+  uri:
+    -
+      value: 'public://walkthrough-ai-assistant-list.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 54104
+  status:
+    -
+      value: true

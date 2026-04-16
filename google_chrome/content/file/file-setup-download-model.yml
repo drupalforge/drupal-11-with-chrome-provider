@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 768c250d-8db1-400a-866b-f52a9afa12e1
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: setup-download-model.png
+  uri:
+    -
+      value: 'public://setup-download-model.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 117544
+  status:
+    -
+      value: true
