@@ -12,8 +12,6 @@ if [ -n "$DEBUG_SCRIPT" ]; then
     set -x
 fi
 
-echo 'this is a custom package installer script, you can install any package here to support your project'
-
 # Install APT packages.
 if ! command -v npm >/dev/null 2>&1; then
   sudo apt-get update
