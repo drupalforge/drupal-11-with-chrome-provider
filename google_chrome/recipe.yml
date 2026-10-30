@@ -33,6 +33,7 @@ config:
     token: "*"
     redirect_after_login: "*"
     browser_ai_ckeditor: "*"
+    shortcut: "*"
   actions:
     # Add French as test language.
     language.entity.fr:
