@@ -33,6 +33,10 @@ Files in the `.devpanel` directory control DevPanel deployment for this app.
 
 ## Creating a Docker image
 
+- [`Dockerfile`](Dockerfile): Appended to the base Dockerfile by the
+  _Drupal Forge Docker Publish Workflow_. Installs Node.js and npm for the
+  CKEditor build in `init.sh`; the workflow does not run
+  `custom_package_installer.sh`.
 - [`create_quickstart.sh`](create_quickstart.sh): Archives the database and
   files for the _Drupal Forge Docker Publish Workflow_ which can be added in
   [GitHub Actions](../../actions).
